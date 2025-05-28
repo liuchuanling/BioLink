@@ -15,6 +15,14 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import NcbiLogo from "@/assets/navi/NcbiLogo.png";
+import PubMedLogo from "@/assets/navi/PubMedLogo.png";
+import NatureLogo from "@/assets/navi/NatureLogo.svg";
+import ScienceLogo from "@/assets/navi/ScienceLogo.svg";
+import CellPressLogo from "@/assets/navi/CellPressLogo.svg";
+import PdbLogo from "@/assets/navi/PdbLogo.png";
+import EnsemblLogo from "@/assets/navi/EnsemblLogo.png";
+import WebOfScienceLogo from "@/assets/navi/WebOfScienceLogo.svg";
 
 interface Site {
   name: string;
@@ -29,43 +37,43 @@ export default defineComponent({
       {
         name: "NCBI",
         url: "https://www.ncbi.nlm.nih.gov/",
-        img: "https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/pmc-logo-share.png",
+        img: NcbiLogo,
         desc: "美国国家生物技术信息中心，提供基因组、文献、数据库等生物信息资源。"
       },
       {
         name: "PubMed",
         url: "https://pubmed.ncbi.nlm.nih.gov/",
-        img: "https://upload.wikimedia.org/wikipedia/commons/2/23/PubMed-logo.png",
+        img: PubMedLogo,
         desc: "全球权威的生物医学文献检索数据库。"
       },
       {
         name: "Nature",
         url: "https://www.nature.com/",
-        img: "https://www.nature.com/polopoly_fs/7.44180.1490015536!/image/nature-logo.png",
+        img: NatureLogo,
         desc: "国际著名的综合性科学期刊，涵盖生命科学等多个领域。"
       },
       {
         name: "Science",
         url: "https://www.sciencemag.org/",
-        img: "https://www.sciencemag.org/sites/default/files/science_logo.png",
+        img: ScienceLogo,
         desc: "美国科学促进会主办的顶级科学期刊，发布最新科研成果。"
       },
       {
         name: "Cell",
         url: "https://www.cell.com/",
-        img: "https://www.cell.com/cms/asset/1b1e7b7c-4e2e-4e3e-8c3e-6e3e7e3e7e3e/cell-logo.png",
+        img: CellPressLogo,
         desc: "生命科学领域权威期刊，聚焦细胞生物学等前沿研究。"
       },
       {
         name: "Protein Data Bank (PDB)",
         url: "https://www.rcsb.org/",
-        img: "https://cdn.rcsb.org/rcsb-pdb/v2/common/images/logos/rcsbpdb-logo.svg",
+        img: PdbLogo,
         desc: "蛋白质结构数据库，提供蛋白质三维结构信息。"
       },
       {
         name: "Ensembl",
         url: "https://www.ensembl.org/",
-        img: "https://www.ensembl.org/i/ensembl-logo.png",
+        img: EnsemblLogo,
         desc: "欧洲生物信息研究所提供的基因组浏览与注释平台。"
       },
       {
@@ -77,7 +85,7 @@ export default defineComponent({
       {
         name: "Web of Science",
         url: "https://www.webofscience.com/",
-        img: "https://clarivate.com/wp-content/uploads/2021/01/WoS-logo.png",
+        img: WebOfScienceLogo,
         desc: "全球权威的科研文献与引文数据库。"
       },
       {
