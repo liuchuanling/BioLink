@@ -16,6 +16,20 @@
       }
     },
     {
+      "path": "/navi/index",
+      "name": "navi",
+      "component": "/navi/index",
+      "meta": {
+        "icon": "Collection",
+        "title": "导航页",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
       "path": "/dataScreen",
       "name": "dataScreen",
       "component": "/dataScreen/index",
