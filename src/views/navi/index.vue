@@ -1,5 +1,11 @@
 <script lang="ts"></script>
 <template>
+  <div>
+    <div class="text-3xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+      生物信息学资源导航
+    </div>
+    <p>以下是一些常用的生物信息学网站和数据库，点击卡片可直接访问。</p>
+  </div>
   <div class="navi-page">
     <div class="site-list">
       <div v-for="site in sites" :key="site.name" class="site-card" @click="openSite(site.url)">

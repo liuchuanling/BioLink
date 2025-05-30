@@ -11,6 +11,7 @@ import viteCompression from "vite-plugin-compression";
 import vueSetupExtend from "unplugin-vue-setup-extend-plus/vite";
 import NextDevTools from "vite-plugin-vue-devtools";
 import { codeInspectorPlugin } from "code-inspector-plugin";
+import tailwindcss from "tailwindcss";
 
 /**
  * 创建 vite 插件
@@ -28,6 +29,8 @@ export const createVitePlugins = (viteEnv: ViteEnv): (PluginOption | PluginOptio
     eslintPlugin(),
     // name 可以写在 script 标签上
     vueSetupExtend({}),
+    // tailwindcss
+    tailwindcss(),
     // 创建打包压缩配置
     createCompression(viteEnv),
     // 注入变量到 html 文件
